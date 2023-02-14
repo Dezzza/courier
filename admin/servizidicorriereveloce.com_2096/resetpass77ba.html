@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="bg" dir="ltr">
+    
+<!-- Mirrored from servizidicorriereveloce.com:2096/resetpass?start=1 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jun 2022 18:32:50 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>        Reset Password        </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="shortcut icon" href="cPanel_magic_revision_1635261268/unprotected/nc-cpanel/favicon.ico" type="image/x-icon" />
+
+        <!-- EXTERNAL CSS -->
+                <link href="cPanel_magic_revision_1616517441/unprotected/nc-cpanel/fonts/open_sans/open_sans.min.css" rel="stylesheet" type="text/css" />        <link href="cPanel_magic_revision_1635261268/unprotected/nc-cpanel/cpanel_style_v2_optimized.css" rel="stylesheet" type="text/css" />    </head>
+    <body class="cp">
+        <div id="login-wrapper">
+
+            <div id="resetpass" class="wrapper">
+                <div id="notify"
+                    style="display:none"
+                                    >
+                    <!-- <div id="login-status"
+                        class="info-notice">
+                        <div id="login-detail">
+                            <div id="login-status-icon-container">
+                                <span class="login-status-icon"></span>
+                            </div>
+                            <div id="login-status-message" class="login-status-message">
+                                
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div id="content-container">
+                  <div class="login-container" id="login-container">
+                    <div class="login-container__sub-container" id="login-sub-container">
+
+                        <div class="login-container__header" id="login-sub-header">
+                            <img src="cPanel_magic_revision_1635261268/unprotected/nc-cpanel/images/cpanel-logo.svg" height="50" alt="logo" />
+                        </div>
+
+                        <div class="alerts">
+                          <div id='login-status' class="alert alert--info"
+                                style="visibility: hidden">
+                              <span tabindex="0" class="alert__close" id="close-notice"></span> <!-- TODO remove inline styling  -->
+                              <div class="alert__content">
+                                  <p id="login-status-message"></p>
+                              </div>
+                          </div>
+                        </div>
+                        <div class="login-container__main" id="reset-sub">
+                            <div class="login-container__login-form login-form" id="reset-forms">
+    <a href="index.html" class="btn btn--link login-form__back-link mb-32">Reset Password</a>
+
+    <form id="reset_form" action="https://servizidicorriereveloce.com:2096/resetpass" method="POST">
+        <!-- Prevent submit via Enter if submit button is disabled -->
+        <input style="display:none" />
+
+        <input type="hidden" name="debug" value="">
+
+        <div class="input-req-login login-form__label">
+            <label for="username">Username</label>
+
+            <div class="tooltip" data-gb-tooltip-placement="right">
+              <div class="tooltip__toggle tooltip__toggle--icon"></div>
+              <div class="tooltip__wrap">
+                <div class="tooltip__arrow"></div>
+                <div class="tooltip__content">
+                  <p>Your cPanel username should differ from your Namecheap username. Your cPanel login details can be found in your Welcome Email.</p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="input-field-login icon username-container login-form__input">
+            <input name="user" id="username" placeholder="Enter your cPanel username" type="text"  autocomplete="off" class="std_textbox form-control" tabindex="1" maxlength="16" required autofocus >
+            <p class="login-form__remark">The username should not have any spaces, uppercase or special characters.</p>
+        </div>
+        <div class="controls login-form__controls">
+            <div class="login-btn">
+                <button name="login" type="submit" class="login-form__submit btn btn--red btn--block" id="login" tabindex="3">Reset Password</button>
+            </div>
+            <div class="reset-pw">
+                <a href="index.html" class="login-form__reset-pass btn btn--link" id="reset_password">Cancel</a>
+            </div>
+        </div>
+        <div class="clear"></div>
+
+        <script type="text/javascript">
+            window.onload = function () {
+                var submit = document.getElementById('login');
+                submit.setAttribute('disabled', true);
+
+                var input = document.getElementById('username');
+                input.addEventListener('input', validateInput);
+                input.addEventListener('propertychange', validateInput); // for IE8
+
+                function validateInput() {
+                    var reUserName = /^(?=.{1,16}$)(?![_.0-9])(?!.*[_.]{2})[a-z0-9]+$/;
+                    // ?=.{4,20}$) username is 1-16 characters long
+                    // (?![_.0-9])  no _ or . at the beginning
+                    // (?!.*[_.]{2}) no __ or _. or ._ or .. inside
+                    // [a-z0-9] allowed characters
+                    // Username cannot begin with a number, or the string 'test'. Or end with the string 'assword'
+                    var val = this.value;
+                    if (!reUserName.test(val) || val.startsWith("test") || val.endsWith("assword")) {
+                        this.classList.add('is-error');
+                        submit.setAttribute('disabled', true)
+                    } else {
+                        this.classList.remove('is-error');
+                        submit.removeAttribute('disabled')
+                    }
+                }
+            };
+        </script>
+    </form>
+    <span id="resetpass-no-user"></span>
+</div>
+
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+
+            <div class="copyright">
+              Copyright© 2022 cPanel, Inc.
+          </div>
+        </div>
+
+        <script type="text/javascript">
+          
+//utils.js
+!function(){function e(){this.closest(".alert").style.visibility="hidden"}document.querySelectorAll(".alert__close").forEach(function(t){t.addEventListener("click",e)})}();
+        </script>
+
+        
+    </body>
+
+<!-- Mirrored from servizidicorriereveloce.com:2096/resetpass?start=1 by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 15 Jun 2022 18:32:54 GMT -->
+</html>

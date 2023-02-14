@@ -1,0 +1,16 @@
+# HTTrack Website Copier Cookie File
+# This file format is compatible with Netscape cookies
+servizidicorriereveloce.com:2096	TRUE	/horde	FALSE	1999999999	Horde	expired
+servizidicorriereveloce.com:2096	TRUE	/	FALSE	1999999999	webmailrelogin	no
+servizidicorriereveloce.com:2096	TRUE	/	FALSE	1999999999	webmailsession	%3aBfa4nxsBqS0RXIq3%2c55d25f26d6b474fcd8e2c5c94f9cb6ff
+servizidicorriereveloce.com:2096	TRUE	/	FALSE	1999999999	session_locale	zh_cn
+servizidicorriereveloce.com:2096	TRUE	/	FALSE	1999999999	roundcube_sessid	expired
+servizidicorriereveloce.com	TRUE	/	FALSE	1999999999	roundcube_sessauth	expired
+servizidicorriereveloce.com:2096	TRUE	/	FALSE	1999999999	Horde	expired
+servizidicorriereveloce.com:2096	TRUE	/	FALSE	1999999999	PPA_ID	expired
+servizidicorriereveloce.com	TRUE	/	FALSE	1999999999	imp_key	expired
+.servizidicorriereveloce.com	TRUE	/	FALSE	1999999999	Horde	expired
+.servizidicorriereveloce.com	TRUE	/	FALSE	1999999999	horde_secret_key	expired
+servizidicorriereveloce.com:2096	TRUE	/	FALSE	1999999999	roundcube_cookies	enabled
+servizidicorriereveloce.com:2096	TRUE	/	FALSE	1999999999	port	2096
+
